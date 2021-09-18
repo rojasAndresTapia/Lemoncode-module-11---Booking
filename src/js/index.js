@@ -17,7 +17,7 @@ const reservas = [
 ];
 
 class hotelBook {
-  constructor(_reserva, _IVA, _subtotal) {
+  constructor() {
     this._reserva = [];
     this._IVA = 21;
     this._subtotal = 0;
@@ -80,7 +80,7 @@ console.log('total', booking.total);
 console.log('*********** Reserva tour operador ************');
 
 class hotelBookTourOperator extends hotelBook {
-  constructor(discount) {
+  constructor() {
     super();
     this._discount = 15;
   }
